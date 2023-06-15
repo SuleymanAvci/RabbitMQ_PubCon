@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "Rabbit_08_MassTransit_WorkerSrv_Con": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

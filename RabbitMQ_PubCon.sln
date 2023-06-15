@@ -31,11 +31,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit_06_Pub", "Rabbit_06_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit_06_Con", "Rabbit_06_Con\Rabbit_06_Con.csproj", "{0F058E1C-04DB-4F75-97D3-D66DB49232D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit_07_MassTransit_Con", "Rabbit_07_MassTransit_Con\Rabbit_07_MassTransit_Con.csproj", "{02D517EA-CCC8-46A0-A2FC-91AE4614E7B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit_07_MassTransit_Con", "Rabbit_07_MassTransit_Con\Rabbit_07_MassTransit_Con.csproj", "{02D517EA-CCC8-46A0-A2FC-91AE4614E7B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit_07_MassTransit_Pub", "Rabbit_07_MassTransit_Pub\Rabbit_07_MassTransit_Pub.csproj", "{C48AEB95-DEF5-4B43-B69C-92DF3B3C043E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit_07_MassTransit_Pub", "Rabbit_07_MassTransit_Pub\Rabbit_07_MassTransit_Pub.csproj", "{C48AEB95-DEF5-4B43-B69C-92DF3B3C043E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit_07_MassTransit_Shared", "Rabbit_07_MassTransit_Shared\Rabbit_07_MassTransit_Shared.csproj", "{7BF71421-8428-41F4-8DE2-6079EBD9F8D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit_07_MassTransit_Shared", "Rabbit_07_MassTransit_Shared\Rabbit_07_MassTransit_Shared.csproj", "{7BF71421-8428-41F4-8DE2-6079EBD9F8D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit_08_MassTransit_WorkerSrv_Pub", "Rabbit_08_MassTransit_WorkerSrv_Pub\Rabbit_08_MassTransit_WorkerSrv_Pub.csproj", "{EAECBF3D-4895-4D85-B88F-353C368F5166}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BF71421-8428-41F4-8DE2-6079EBD9F8D7} = {7BF71421-8428-41F4-8DE2-6079EBD9F8D7}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit_08_MassTransit_WorkerSrv_Con", "Rabbit_08_MassTransit_WorkerSrv_Con\Rabbit_08_MassTransit_WorkerSrv_Con.csproj", "{14D7A24D-D64C-4374-9A58-69F01F725D22}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BF71421-8428-41F4-8DE2-6079EBD9F8D7} = {7BF71421-8428-41F4-8DE2-6079EBD9F8D7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit_09_MassTransit.RequestResponsePattern_Con", "Rabbit_09_MassTransit.RequestResponsePattern_Con\Rabbit_09_MassTransit.RequestResponsePattern_Con.csproj", "{03E5AED6-8B7F-4E91-8E6A-2DA32035213B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit_09_MassTransit.RequestResponsePattern_Pub", "Rabbit_09_MassTransit.RequestResponsePattern_Pub\Rabbit_09_MassTransit.RequestResponsePattern_Pub.csproj", "{826156DB-13D3-4409-AD47-EE943AEBCCD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit_Z_MassTransit.Shared", "Rabbit_Z_MassTransit.Shared\Rabbit_Z_MassTransit.Shared.csproj", "{9ED1BCFA-99BC-452B-B2F5-D0740E4667F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +127,26 @@ Global
 		{7BF71421-8428-41F4-8DE2-6079EBD9F8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BF71421-8428-41F4-8DE2-6079EBD9F8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BF71421-8428-41F4-8DE2-6079EBD9F8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAECBF3D-4895-4D85-B88F-353C368F5166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAECBF3D-4895-4D85-B88F-353C368F5166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAECBF3D-4895-4D85-B88F-353C368F5166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAECBF3D-4895-4D85-B88F-353C368F5166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D7A24D-D64C-4374-9A58-69F01F725D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D7A24D-D64C-4374-9A58-69F01F725D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D7A24D-D64C-4374-9A58-69F01F725D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D7A24D-D64C-4374-9A58-69F01F725D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E5AED6-8B7F-4E91-8E6A-2DA32035213B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E5AED6-8B7F-4E91-8E6A-2DA32035213B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E5AED6-8B7F-4E91-8E6A-2DA32035213B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E5AED6-8B7F-4E91-8E6A-2DA32035213B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{826156DB-13D3-4409-AD47-EE943AEBCCD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826156DB-13D3-4409-AD47-EE943AEBCCD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826156DB-13D3-4409-AD47-EE943AEBCCD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826156DB-13D3-4409-AD47-EE943AEBCCD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED1BCFA-99BC-452B-B2F5-D0740E4667F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED1BCFA-99BC-452B-B2F5-D0740E4667F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED1BCFA-99BC-452B-B2F5-D0740E4667F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED1BCFA-99BC-452B-B2F5-D0740E4667F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
