@@ -5,8 +5,8 @@ using System.Text;
 
 
 //Bağlantı Oluşturma
-ConnectionFactory factory = new();
-factory.Uri = new("amqps://sywjinjf:5vIsZWAHKg8_oUWMdINOVukpQwzTjcfi@moose.rmq.cloudamqp.com/sywjinjf");
+ConnectionFactory factory = new() { HostName="localhost", Port=5672 };
+
 
 
 //Bağlantıyı Aktifleştirme ve Kanal Açma
